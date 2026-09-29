@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nagendra Vernekarfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- PARTICLE CANVAS -->
+  <canvas id="particles"></canvas>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-logo"><span>&lt;/&gt;</span> NV06</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Nagendra <span class="neon">Vernekar</span></h1>
+      <h2 class="hero-role"><span id="typewriter"></span><span class="cursor">|</span></h2>
+      <p class="hero-desc">
+        Computer Science Engineering Student passionate about building practical software solutions using Java, Python, Spring Boot, and cloud technologies.
+      </p>
+      <div class="hero-buttons">
+        <a href="#about" class="btn btn-primary">About Me</a>
+        <a href="https://drive.google.com/file/d/1u7t-FHd7xAh5_lJVoYuqkPpt_bHf0lIH/view?usp=drivesdk" class="btn btn-outline" target="_blank" rel="noopener noreferrer"> Resume</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/nagendraveer" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nagendra-vernekar-218468320/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:nagendravernekar06@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-illustration">
+      <div class="hero-img-wrapper">
+        <img src="front.jpeg" alt="Nagendra Vednekar" class="hero-img" />
+        <div class="hero-img-ring"></div>
+        <div class="hero-img-ring ring-2"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2 class="section-title">About <span class="neon">Me</span></h2>
+    <div class="about-grid">
+      <div class="about-card glass">
+        <div class="about-avatar">
+          <img src="nagendra.jpeg" alt="Nagendra Vednekar" class="about-img" />
+        </div>
+        <div class="about-text">
+          <p>I'm a <span class="neon">BE Computer Science student at KLE Tech University</span>, passionate about building real-world software that solves meaningful problems.</p>
+          <p>My interests span <span class="cyan">backend development</span> with Java & Spring Boot, <span class="cyan">AI/ML</span> with Python, and <span class="cyan">cloud/DevOps</span> with Docker, Kubernetes, and AWS.</p>
+          <p>Outside of code, I represent my college in <span class="neon">cricket 🏏</span> — a sport that has taught me teamwork, discipline, and staying calm under pressure.</p>
+        </div>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card glass"><i class="fas fa-code"></i><h3>Backend Dev</h3><p>Java & Spring Boot</p></div>
+        <div class="stat-card glass"><i class="fas fa-brain"></i><h3>ML / AI</h3><p>Python & Scikit-learn</p></div>
+        <div class="stat-card glass"><i class="fas fa-cloud"></i><h3>Cloud & DevOps</h3><p>Docker, K8s, AWS</p></div>
+        <div class="stat-card glass"><i class="fas fa-database"></i><h3>Databases</h3><p>MySQL & JPA</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-dark">
+    <h2 class="section-title">Skills & <span class="neon">Abilities</span></h2>
+    <div class="skills-container">
+      <div class="skill-group glass">
+        <h3><i class="fas fa-terminal"></i> Languages</h3>
+        <div class="skill-pills">
+          <span>Java</span><span>Python</span><span>C++</span><span>SQL</span>
+        </div>
+      </div>
+      <div class="skill-group glass">
+        <h3><i class="fas fa-server"></i> Backend</h3>
+        <div class="skill-pills">
+          <span>Spring Boot</span><span>REST APIs</span><span>JPA/Hibernate</span><span>Maven</span>
+        </div>
+      </div>
+      <div class="skill-group glass">
+        <h3><i class="fas fa-database"></i> Database</h3>
+        <div class="skill-pills">
+          <span>MySQL</span>
+        </div>
+      </div>
+      <div class="skill-group glass">
+        <h3><i class="fas fa-robot"></i> AI / ML</h3>
+        <div class="skill-pills">
+          <span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>TensorFlow</span>
+        </div>
+      </div>
+      <div class="skill-group glass">
+        <h3><i class="fas fa-cloud"></i> DevOps / Cloud</h3>
+        <div class="skill-pills">
+          <span>Docker</span><span>Kubernetes</span><span>GitHub Actions</span><span>Argo CD</span><span>AWS</span>
+        </div>
+      </div>
+      <div class="skill-group glass">
+        <h3><i class="fas fa-tools"></i> Tools</h3>
+        <div class="skill-pills">
+          <span>Git</span><span>GitHub</span><span>Postman</span><span>Jupyter</span>
+        </div>
+      </div>
+      <div class="skill-group glass">
+        <h3><i class="fas fa-book"></i> Core CS</h3>
+        <div class="skill-pills">
+          <span>DSA</span><span>DBMS</span><span>OS</span><span>Computer Networks</span><span>OOP</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2 class="section-title">Featured <span class="neon">Projects</span></h2>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card glass">
+        <div class="project-top">
+          <div class="project-icon purple"><i class="fas fa-code-branch"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/nagendraveer/bankapp-devops" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>GitOps CI/CD Pipeline</h3>
+        <p class="project-sub">Banking Application</p>
+        <p>End-to-end GitOps pipeline using GitHub Actions, Docker, Kubernetes, and Argo CD deployed on AWS.</p>
+        <div class="project-flow">
+          <span>GitHub</span><i class="fas fa-chevron-right"></i>
+          <span>Actions</span><i class="fas fa-chevron-right"></i>
+          <span>Docker</span><i class="fas fa-chevron-right"></i>
+          <span>K8s/AWS</span><i class="fas fa-chevron-right"></i>
+          <span>Argo CD</span>
+        </div>
+        <div class="project-tags">
+          <span>AWS</span><span>Docker</span><span>Kubernetes</span><span>GitHub Actions</span><span>Argo CD</span>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card glass">
+        <div class="project-top">
+          <div class="project-icon cyan"><i class="fas fa-calendar-check"></i></div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>Smart Exam Manager</h3>
+        <p class="project-sub">Backend System</p>
+        <p>Automated exam scheduling using graph-coloring algorithm to eliminate conflicts, with REST APIs for students and professors.</p>
+        <ul class="project-features">
+          <li>Graph-coloring-based scheduling</li>
+          <li>Conflict detection & resolution</li>
+          <li>Student timetable management</li>
+        </ul>
+        <div class="project-tags">
+          <span>Java</span><span>Spring Boot</span><span>MySQL</span><span>Graph Coloring</span>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card glass">
+        <div class="project-top">
+          <div class="project-icon purple"><i class="fas fa-user-graduate"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/nagendraveer/student-registration" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>Student Registration System</h3>
+        <p class="project-sub">Full-Stack Backend</p>
+        <p>Spring Boot backend for managing student registration and information with full CRUD operations via REST APIs and MySQL.</p>
+        <div class="project-flow">
+          <span>Client</span><i class="fas fa-chevron-right"></i>
+          <span>Controller</span><i class="fas fa-chevron-right"></i>
+          <span>Service</span><i class="fas fa-chevron-right"></i>
+          <span>Repository</span><i class="fas fa-chevron-right"></i>
+          <span>MySQL</span>
+        </div>
+        <div class="project-tags">
+          <span>Java</span><span>Spring Boot</span><span>MySQL</span><span>JPA</span><span>REST API</span>
+        </div>
+      </div>
+
+      <!-- Project 4 — Published -->
+      <div class="project-card glass published-card">
+        <div class="pub-badge"><i class="fas fa-book-open"></i> Published Research</div>
+        <div class="project-top">
+          <div class="project-icon cyan"><i class="fas fa-seedling"></i></div>
+          <div class="project-links">
+            <a href="https://doi.org/10.2991/978-94-6463-978-0_57" target="_blank" rel="noopener noreferrer" title="View Publication"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Agriculture Productivity Analytics</h3>
+        <p class="project-sub">ML Research Paper</p>
+        <p>ML pipeline to analyze and predict agricultural productivity using real-world datasets with EDA, feature engineering, and multiple ML models.</p>
+        <div class="doi-box">
+          <span class="doi-label">DOI</span>
+          <a href="https://doi.org/10.2991/978-94-6463-978-0_57" target="_blank" rel="noopener noreferrer" class="doi-link">10.2991/978-94-6463-978-0_57</a>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>ML</span><span>Research</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section-dark">
+    <h2 class="section-title">Experience &amp; <span class="neon">Activities</span></h2>
+    <div class="timeline">
+      <div class="timeline-card glass">
+        <img src="kle.jpg" alt="KLE Tech University" class="tl-img" />
+        <div class="tl-body">
+          <div class="tl-title-row">
+            <h3>College Cricket Team</h3>
+            <i class="fas fa-cricket-bat-ball tl-sport-icon"></i>
+          </div>
+          <p class="tl-org">KLE Tech University</p>
+          <p>Represented my college in cricket, developing teamwork, discipline, communication, and leadership skills under competitive pressure.</p>
+        </div>
+      </div>
+      <div class="timeline-card glass cert-card">
+        <div class="cert-icon-wrap"><i class="fas fa-certificate"></i></div>
+        <div class="tl-body">
+          <h3>Certifications</h3>
+          <ul class="cert-list">
+            <li>
+              <a href="https://archive.nptel.ac.in/content/noc/NOC25/SEM2/Ecertificates/106/noc25-cs149/Course/NPTEL25CS149S53200012309176848.pdf" target="_blank" rel="noopener noreferrer" class="cert-name cert-link">Introduction to Machine Learning <i class="fas fa-external-link-alt cert-ext"></i></a>
+              <span class="cert-issuer">NPTEL &bull; <span class="cert-year">2025</span></span>
+            </li>
+            <li>
+              <a href="https://drive.google.com/file/d/1wh8D_pMESwffa95fTkD8mIlAwSSOQm0w/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="cert-name cert-link">DevOps Mindset: Understanding DevOps Tools <i class="fas fa-external-link-alt cert-ext"></i></a>
+              <span class="cert-issuer">Infosys Springboard</span>
+            </li>
+            <li>
+              <a href="https://drive.google.com/file/d/1wnrDNhTX6-flDLchY4Di70OHS7mGiGHU/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="cert-name cert-link">Jenkins for DevOps: Jenkins Configuration for DevOps <i class="fas fa-external-link-alt cert-ext"></i></a>
+              <span class="cert-issuer">Infosys Springboard</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <h2 class="section-title">Edu<span class="neon">cation</span></h2>
+    <div class="edu-list">
+      <div class="edu-card glass">
+        <img src="kle.jpg" alt="KLE Tech University" class="edu-img" />
+        <div class="edu-body">
+          <h3>Bachelor of Engineering &ndash; Computer Science</h3>
+          <p class="edu-org">KLE Tech University</p>
+          <p class="edu-year">Expected Graduation: 2027</p>
+          <div class="edu-courses">
+            <span>DSA</span><span>DBMS</span><span>Operating Systems</span>
+            <span>Computer Networks</span><span>Software Engineering</span>
+            <span>Machine Learning</span><span>Cloud / DevOps</span>
+          </div>
+        </div>
+      </div>
+      <div class="edu-card glass">
+        <img src="gogte.avif" alt="Gogte PU College" class="edu-img" />
+        <div class="edu-body">
+          <h3>Pre-University (PUC)</h3>
+          <p class="edu-org">Gogte PU College of Commerce &amp; Science, Belagavi, Karnataka</p>
+          <p class="edu-year">2021 &ndash; 2023 &nbsp;&bull;&nbsp; <span class="edu-score">82.5%</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-dark">
+    <h2 class="section-title">Contact <span class="neon">Me</span></h2>
+    <p class="contact-sub">Let's build something together.</p>
+    <div class="contact-grid">
+      <a href="mailto:nagendravernekar06@gmail.com" class="contact-card glass">
+        <i class="fas fa-envelope"></i><span>nagendravernekar06@gmail.com</span>
+      </a>
+      <a href="https://www.linkedin.com/in/nagendra-vernekar-218468320/" target="_blank" rel="noopener noreferrer" class="contact-card glass">
+        <i class="fab fa-linkedin"></i><span>linkedin.com/in/nagendra-vernekar</span>
+      </a>
+      <a href="https://github.com/nagendraveer" target="_blank" rel="noopener noreferrer" class="contact-card glass">
+        <i class="fab fa-github"></i><span>github.com/nagendraveer</span>
+      </a>
+      <div class="contact-card glass no-link">
+        <i class="fas fa-map-marker-alt"></i><span>India</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Designed &amp; Built by <span class="neon">Nagendra Vernekar</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
